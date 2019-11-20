@@ -2,6 +2,8 @@
     <head>
         <title>Main Page</title>
         <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
     </head>
     <body onload="refresh()">
         <div id="screen">
@@ -12,10 +14,33 @@
                         <a href="add.html"><img border="0" src="images/add-icon.png" width="23px" height="23px" ></a>
                     </div>
               </div>
-              <p id="event-information"></p>
-              <div>
-             
+            <div class="main-event">
+                <div class="event-left">
+                    <div class="event-name" id="event-name">  </div>
+                    <div class="time" id="event-time">
+                        <i class="material-icons"> access_alarms </i>
+                    </div>
+
+                    <div class="location" id="event-location">
+                        <i class="material-icons"> room </i>
+                    </div>
+
+<!--                    <div class="event-location-time" id="event-location-time"> </div>-->
+                </div>
+                <div class="event-middle">
+                    <div class="planning" onclick="planning()"> Planning </div>
+                </div>
+                <div class="event-right">
+                    <div class="delete">
+                        <i class="material-icons">
+                            delete
+                        </i>
+                    </div>
+                </div>
+                <p id="event-information"> </p>
+            </div>
         </div>
+
       <script src="p6.js">
       </script>
    </body>
