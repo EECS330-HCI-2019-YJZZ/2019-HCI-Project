@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5ee1e17-0d04-4d4f-ba1d-512e57a227a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/baseline_access_alarms_black_18dp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/baseline_room_black_18dp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p6.js" beforeDir="false" afterPath="$PROJECT_DIR$/p6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/planning.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +69,7 @@
       <workItem from="1574233706592" duration="4926000" />
       <workItem from="1574442053588" duration="68000" />
       <workItem from="1574449172548" duration="604000" />
-      <workItem from="1574632711213" duration="736000" />
+      <workItem from="1574632711213" duration="5374000" />
     </task>
     <task id="LOCAL-00001" summary="main page features added">
       <created>1574237719395</created>
