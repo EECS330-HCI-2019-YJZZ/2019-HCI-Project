@@ -14,6 +14,10 @@ var date=document.getElementById("date").value;
 var date_back;
 
 
+function home() {
+    window.location.href = 'main.html';
+}
+
 
 function save(){
 	date=document.getElementById("date").value;
@@ -48,12 +52,13 @@ loca_back=key[4];
 memo_back=key[5];
   // document.getElementById("event-information").innerHTML="date:"+date_back+"&nbsp;&nbsp;time:"+hour_back+":&nbsp;"+minute_back+"\n"+"name:"+name_back+"&nbsp;&nbsp;location:"+loca_back+"&nbsp;&nbsp;memo:"+memo_back;
   document.getElementById("event-name").innerHTML = name_back;
-  // document.getElementById("event-location-time").innerHTML =
+    document.getElementById("event-time").innerHTML = date_back;
+    document.getElementById("event-time").innerHTML = loca_back;
 }
 	
 }
 
-function edit(){
+function add(){
 	window.location.href='add.html?'+date_back+"&"+hour_back+"&"+minute_back+"&"+name_back+"&"+loca_back+"&"+memo_back;
 	
 }
@@ -88,9 +93,6 @@ document.getElementById("minute").value=key[2];
 document.getElementById("event_name").value=key[3];
 document.getElementById("event_location").value=key[4];
 document.getElementById("event_memo").value=key[5];
-
-
-	
 }
 
 

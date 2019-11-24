@@ -8,22 +8,25 @@
     <body onload="refresh()">
         <div id="screen">
               <div class="head-bar">
-                     <a class="edit-button" onclick="edit()"> Edit </a> 
-                     
-                     <div class="add-button">
-                        <a href="add.html"><img border="0" src="images/add-icon.png" width="23px" height="23px" ></a>
-                    </div>
+                     <a class="add-button" onclick="add()"> Add </a>
               </div>
             <div class="main-event">
                 <div class="event-left">
                     <div class="event-name" id="event-name">  </div>
-                    <div class="time" id="event-time">
-                        <i class="material-icons"> access_alarms </i>
+                    <div class="event-time">
+                        <img src="images/baseline_access_alarms_black_18dp.png" class="clock">
                     </div>
+                    <div class="event-location">
+                        <img src="images/baseline_room_black_18dp.png" class="clock">
+                    </div>
+<!--                    <i class="material-icons md-8"> room </i> fff-->
+<!--                    <div class="event-time" id="event-time">-->
+<!--                        <i class="material-icons md-8"> access_alarms </i>-->
+<!--                    </div>-->
 
-                    <div class="location" id="event-location">
-                        <i class="material-icons"> room </i>
-                    </div>
+<!--                    <div class="event-location" id="event-location">-->
+<!--                        -->
+<!--                    </div>-->
 
 <!--                    <div class="event-location-time" id="event-location-time"> </div>-->
                 </div>
