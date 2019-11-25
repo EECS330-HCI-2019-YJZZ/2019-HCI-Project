@@ -107,13 +107,20 @@ function render_edit() {
     document.getElementById("event_memo").value = element.memo;
 }
 
-function delete_item(){
-
+function delete_item(e){
+    console.log("print", e.path[4].id);
+    var id = parseInt(e.path[4].id) - 1;
+    var cnt = localStorage.getItem("count");
+    console.log("count", localStorage.getItem("count"));
+    for (var i = id + 1; i < cnt; i++) {
+        localStorage.setItem((i-1).toString(), localStorage.getItem(i));
+    }
+    localStorage.removeItem(cnt);
+    cnt = parseInt(cnt);
+    cnt--;
+    localStorage.setItem("count", cnt);
+    window.location.href = "./main.html";
 }
-
-// $( "#edit" ).onclick(function( event ) {
-//     console.log(event.target);
-// });
 
 
 function planning() {
