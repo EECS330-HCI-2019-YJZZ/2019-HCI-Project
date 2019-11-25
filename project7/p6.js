@@ -27,8 +27,13 @@ function render(node) {
             if (json.name !== null) {
                 name[0].innerHTML = json.name;
             }
-            if (json.hour !== null) {
-                time[0].innerHTML = json.hour;
+            if (json.hour !== "") {
+                if (json.minute === "") {
+                    time[0].innerHTML = json.hour+":00";
+                }
+                else {
+                    time[0].innerHTML = json.hour+":"+json.minute;
+                }
             }
             if (json.loca !== null) {
                 location[0].innerHTML = json.loca;
