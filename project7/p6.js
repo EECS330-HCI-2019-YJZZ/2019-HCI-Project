@@ -69,6 +69,16 @@ function save(){
 }
 
 function save_edit() {
+    var each_info = new Object();
+    each_info.date = document.getElementById("date").value;
+    each_info.hour = document.getElementById("hour").value;
+    each_info.minute = document.getElementById("minute").value;
+    each_info.loca = document.getElementById("event_location").value;
+    each_info.name = document.getElementById("event_name").value;
+    each_info.memo = document.getElementById("event_memo").value;
+    var id = localStorage.getItem("edit_page");
+    var jsonString = JSON.stringify(each_info);
+    localStorage.setItem(id, jsonString);
     window.location.href = "./main.html";
 }
 
