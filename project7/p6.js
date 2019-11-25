@@ -12,6 +12,7 @@ var loca_back;
 var memo_back;
 var date;
 var date_back;
+var info = [];
 
 
 // refresh the main page
@@ -19,19 +20,33 @@ var date_back;
 function refresh_main() {
     console.log("inside home", name);
     document.getElementById("event-name").innerHTML = name;
-    console.log(localStorage.length);
+    console.log(localStorage);
 }
 
 // save the variable to localStorage and redirect to main page
 function save(){
-    // date=document.getElementById("date").value;
-    // hour=document.getElementById("hour").value;
-    // minute=document.getElementById("minute").value;
+    date=document.getElementById("date").value;
+    hour=document.getElementById("hour").value;
+    minute=document.getElementById("minute").value;
     name = document.getElementById("event_name").value;
-    console.log("name", name);
-    // loca=document.getElementById("event_location").value;
-    // memo=document.getElementById("event_memo").value;
-    localStorage.setItem(name, memo);
+    loca=document.getElementById("event_location").value;
+    memo=document.getElementById("event_memo").value;
+    var each_info = new Object();
+    each_info.date = date;
+    each_info.hour = hour;
+    each_info.minute = minute;
+    each_info.loca = loca;
+    each_info.name = name;
+    each_info.memo = memo;
+    var cnt = localStorage.getItem("count");
+    if (cnt == null) {
+        cnt = 0;
+    }
+    var jsonString = JSON.stringify(each_info);
+    console.log("jsonString", jsonString);
+    localStorage.setItem(cnt, jsonString);
+    cnt = parseInt(cnt);
+    localStorage.setItem("count", cnt + 1);
     window.location = "./main.html";
 }
 
