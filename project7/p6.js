@@ -9,9 +9,11 @@ var date;
 function render(node) {
     var cnt = localStorage.getItem("count");
     if (cnt === null) {
+        document.getElementById('0').style.visibility = "hidden";
         return;
     }
     else {
+        document.getElementById('0').style.visibility = "visible";
         cnt = parseInt(cnt);
         cnt++;
         for (var i = 0; i < cnt - 1; i++) {
@@ -38,7 +40,7 @@ function refresh_main() {
     console.log("inside home", name);
     document.getElementById("event-name").innerHTML = name;
     console.log(localStorage);
-    render(document.querySelector('.main-event'), 4);
+    render(document.querySelector('.main-event'));
 }
 
 // save the variable to localStorage and redirect to main page
