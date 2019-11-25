@@ -1,10 +1,3 @@
-var loca;
-var memo;
-var name;
-var hour;
-var minute;
-var date;
-
 // clone the repeated structure many times
 function render(node) {
     var cnt = localStorage.getItem("count");
@@ -25,8 +18,22 @@ function render(node) {
             var json = JSON.parse(jsonString);
             console.log("current index", i);
             console.log("current json name)", json.name);
-            document.getElementById("event-name").innerHTML = json.name;
-            child[0].innerHTML = json.name;
+            // change name
+            // child[0].innerHTML = json.name;
+            // change event location
+            var name = copy.getElementsByClassName("event-name");
+            var time = copy.getElementsByClassName("event-time");
+            var location = copy.getElementsByClassName("event-location");
+            if (json.name !== null) {
+                name[0].innerHTML = json.name;
+            }
+            if (json.hour !== null) {
+                time[0].innerHTML = json.hour;
+            }
+            if (json.loca !== null) {
+                location[0].innerHTML = json.loca;
+            }
+            console.log(name, time, location);
             console.log("change", child[0]);
             node.parentNode.insertBefore(copy, node);
         }

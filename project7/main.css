@@ -105,8 +105,8 @@ body {
 }
 
 .event-location-time {
-	font-size: 15px;
-	height: 20px;
+	width: 45px;
+	height: 15px;
 }
 
 .event-time {
@@ -115,6 +115,7 @@ body {
 	font-size: 12px;
 	float: left;
 	margin-top: 5px;
+	text-align: left;
 }
 
 .event-location {
@@ -123,6 +124,7 @@ body {
 	font-size: 12px;
 	float: left;
 	margin-top: 5px;
+	text-align: left;
 }
 
 .clock {
