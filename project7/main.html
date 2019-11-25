@@ -5,36 +5,45 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
     </head>
-    <body onload="refresh()">
+    <body onload="refresh_main()">
         <div id="screen">
               <div class="head-bar">
-                     <a class="edit-button" onclick="edit()"> Edit </a> 
-                     
-                     <div class="add-button">
-                        <a href="add.html"><img border="0" src="images/add-icon.png" width="23px" height="23px" ></a>
-                    </div>
+                  <a class="add-button" onclick="add()"> <i class="material-icons">
+                      add_circle_outline
+                  </i> </a>
               </div>
-            <div class="main-event">
+            <div id="body">
+
+            </div>
+            <div class="main-event" id="0">
                 <div class="event-left">
-                    <div class="event-name" id="event-name">  </div>
-                    <div class="time" id="event-time">
-                        <i class="material-icons"> access_alarms </i>
+                    <div class="event-name" id="event-name"> default model </div>
+                    <div class="event-time">
+                        <img src="images/baseline_access_alarms_black_18dp.png" class="clock">
                     </div>
-
-                    <div class="location" id="event-location">
-                        <i class="material-icons"> room </i>
+                    <div class="event-location">
+                        <img src="images/baseline_room_black_18dp.png" class="clock">
                     </div>
-
-<!--                    <div class="event-location-time" id="event-location-time"> </div>-->
                 </div>
                 <div class="event-middle">
-                    <div class="planning" onclick="planning()"> Planning </div>
+                    <div class="planning" onclick="planning()"> Plan </div>
                 </div>
                 <div class="event-right">
                     <div class="delete">
-                        <i class="material-icons">
-                            delete
-                        </i>
+                        <a onclick="delete_item()">
+                            <i class="material-icons">
+                                delete
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="event-right">
+                    <div class="delete">
+                        <a onclick="edit()">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
                     </div>
                 </div>
                 <p id="event-information"> </p>
