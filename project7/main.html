@@ -12,6 +12,9 @@
                       add_circle_outline
                   </i> </a>
               </div>
+            <div id="body">
+
+            </div>
             <div class="main-event">
                 <div class="event-left">
                     <div class="event-name" id="event-name">  </div>
@@ -21,32 +24,26 @@
                     <div class="event-location">
                         <img src="images/baseline_room_black_18dp.png" class="clock">
                     </div>
-<!--                    <i class="material-icons md-8"> room </i> fff-->
-<!--                    <div class="event-time" id="event-time">-->
-<!--                        <i class="material-icons md-8"> access_alarms </i>-->
-<!--                    </div>-->
-
-<!--                    <div class="event-location" id="event-location">-->
-<!--                        -->
-<!--                    </div>-->
-
-<!--                    <div class="event-location-time" id="event-location-time"> </div>-->
                 </div>
                 <div class="event-middle">
                     <div class="planning" onclick="planning()"> Plan </div>
                 </div>
                 <div class="event-right">
                     <div class="delete">
-                        <i class="material-icons">
-                            delete
-                        </i>
+                        <a onclick="delete_item()">
+                            <i class="material-icons">
+                                delete
+                            </i>
+                        </a>
                     </div>
                 </div>
                 <div class="event-right">
                     <div class="delete">
-                        <i class="material-icons">
-                            edit
-                        </i>
+                        <a onclick="edit()">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
                     </div>
                 </div>
                 <p id="event-information"> </p>
