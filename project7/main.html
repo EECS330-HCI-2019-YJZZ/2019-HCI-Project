@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="main.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     </head>
     <body onload="refresh_main()">
         <div id="screen">
@@ -36,7 +37,7 @@
                 </div>
                 <div class="event-right">
                     <div class="delete">
-                        <a onclick="delete_item()">
+                        <a onclick="delete_item(this)">
                             <i class="material-icons">
                                 delete
                             </i>
@@ -45,19 +46,18 @@
                 </div>
                 <div class="event-right">
                     <div class="delete">
-                        <a onclick="edit()">
+                        <div onclick="edit(event)">
                             <i class="material-icons">
                                 edit
                             </i>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <p id="event-information"> </p>
             </div>
         </div>
 
-      <script src="p6.js">
-      </script>
+      <script src="p6.js"></script>
    </body>
 </html>
 <!-- 

@@ -68,18 +68,42 @@ function save(){
     window.location = "./main.html";
 }
 
+function save_edit() {
+    window.location.href = "./main.html";
+}
+
 function add(){
-	// window.location.href='add.html?'+date_back+"&"+hour_back+"&"+minute_back+"&"+name_back+"&"+loca_back+"&"+memo_back;
     window.location.href = "./add.html";
 }
 
-function edit(){
+function edit(e){
+    // get the id of which should be edit
+    console.log("print", e.path[4].id);
+    var id = parseInt(e.path[4].id) - 1;
+    localStorage.setItem("edit_page", id.toString());
+    window.location.href = "./edit.html";
+    render_edit();
+}
 
+function render_edit() {
+    var id = localStorage.getItem("edit_page");
+    console.log(localStorage.getItem(id.toString()));
+    var element = JSON.parse(localStorage.getItem(id.toString()));
+    document.getElementById("date").value = element.date;
+    document.getElementById("hour").value = element.hour;
+    document.getElementById("minute").value = element.minute;
+    document.getElementById("event_name").value = element.name;
+    document.getElementById("event_location").value = element.loca;
+    document.getElementById("event_memo").value = element.memo;
 }
 
 function delete_item(){
 
 }
+
+// $( "#edit" ).onclick(function( event ) {
+//     console.log(event.target);
+// });
 
 
 function planning() {
