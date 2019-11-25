@@ -16,8 +16,19 @@ function render(node) {
         cnt++;
         for (var i = 0; i < cnt - 1; i++) {
             copy = node.cloneNode(true);
+            var child = document.getElementById(copy.id).children[0].children;
+            console.log(child);
+            copy.id = i + 1;
+            var jsonString = localStorage.getItem(i.toString());
+            var json = JSON.parse(jsonString);
+            console.log("current index", i);
+            console.log("current json name)", json.name);
+            document.getElementById("event-name").innerHTML = json.name;
+            child[0].innerHTML = json.name;
+            console.log("change", child[0]);
             node.parentNode.insertBefore(copy, node);
         }
+        document.getElementById('0').style.visibility = "hidden";
     }
 }
 
