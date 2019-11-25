@@ -37,27 +37,18 @@ function render(node) {
 // refresh the main page
 // this function should rendering all element in main page
 function refresh_main() {
-    console.log("inside home", name);
-    document.getElementById("event-name").innerHTML = name;
-    console.log(localStorage);
     render(document.querySelector('.main-event'));
 }
 
 // save the variable to localStorage and redirect to main page
 function save(){
-    date=document.getElementById("date").value;
-    hour=document.getElementById("hour").value;
-    minute=document.getElementById("minute").value;
-    name = document.getElementById("event_name").value;
-    loca=document.getElementById("event_location").value;
-    memo=document.getElementById("event_memo").value;
     var each_info = new Object();
-    each_info.date = date;
-    each_info.hour = hour;
-    each_info.minute = minute;
-    each_info.loca = loca;
-    each_info.name = name;
-    each_info.memo = memo;
+    each_info.date = document.getElementById("date").value;
+    each_info.hour = document.getElementById("hour").value;
+    each_info.minute = document.getElementById("minute").value;
+    each_info.loca = document.getElementById("event_location").value;
+    each_info.name = document.getElementById("event_name").value;
+    each_info.memo = document.getElementById("event_memo").value;
     var cnt = localStorage.getItem("count");
     if (cnt == null) {
         cnt = 0;
