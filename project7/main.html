@@ -8,7 +8,9 @@
     <body onload="refresh_main()">
         <div id="screen">
               <div class="head-bar">
-                  <a class="add-button" onclick="add()"> Add </a>
+                  <a class="add-button" onclick="add()"> <i class="material-icons">
+                      add_circle_outline
+                  </i> </a>
               </div>
             <div class="main-event">
                 <div class="event-left">
@@ -31,12 +33,19 @@
 <!--                    <div class="event-location-time" id="event-location-time"> </div>-->
                 </div>
                 <div class="event-middle">
-                    <div class="planning" onclick="planning()"> Planning </div>
+                    <div class="planning" onclick="planning()"> Plan </div>
                 </div>
                 <div class="event-right">
                     <div class="delete">
                         <i class="material-icons">
                             delete
+                        </i>
+                    </div>
+                </div>
+                <div class="event-right">
+                    <div class="delete">
+                        <i class="material-icons">
+                            edit
                         </i>
                     </div>
                 </div>

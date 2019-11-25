@@ -14,19 +14,15 @@ var date;
 var date_back;
 
 
-// function for redirect to main page
-function home() {
-    window.location = "./main.html";
-}
-
 // refresh the main page
 // this function should rendering all element in main page
 function refresh_main() {
     console.log("inside home", name);
     document.getElementById("event-name").innerHTML = name;
+    console.log(localStorage.length);
 }
 
-
+// save the variable to localStorage and redirect to main page
 function save(){
     // date=document.getElementById("date").value;
     // hour=document.getElementById("hour").value;
@@ -36,7 +32,7 @@ function save(){
     // loca=document.getElementById("event_location").value;
     // memo=document.getElementById("event_memo").value;
     localStorage.setItem(name, memo);
-    home();
+    window.location = "./main.html";
 }
 
 function passvalueinadd(){
