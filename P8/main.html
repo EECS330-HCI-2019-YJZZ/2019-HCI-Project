@@ -1,0 +1,69 @@
+<html id="main">
+    <head>
+        <title>Main Page</title>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+    <body onload="refresh_main()">
+        <div id="screen">
+              <div class="head-bar">
+                  <a class="add-button" onclick="add()"> <i class="material-icons">
+                      add_circle_outline
+                  </i> </a>
+              </div>
+            <div id="body">
+
+            </div>
+            <div class="main-event" id="0">
+                <div class="event-left">
+                    <div class="event-name" id="event-name"> default model </div>
+                    <table class="event-location-time">
+                        <tr>
+                            <th><img src="images/baseline_access_alarms_black_18dp.png" class="clock"></th>
+                            <th>
+                                <div class="event-time"> </div>
+                            </th>
+                            <th><img src="images/baseline_room_black_18dp.png" class="clock"></th>
+                            <th>
+                                <div class="event-location"> </div>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="event-middle">
+                    <div class="planning"> 
+                        <a onclick="planning(event)">
+                            <p style="margin-top: 0px;">Plan</p>
+                        </a>
+                 </div>
+                </div>
+                <div class="event-right">
+                    <div class="delete">
+                        <a onclick="delete_item(event)">
+                            <i class="material-icons">
+                                delete
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="event-right">
+                    <div class="delete">
+                        <div onclick="edit(event)">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <p id="event-information"> </p>
+            </div>
+        </div>
+
+      <script src="p6.js"></script>
+   </body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->

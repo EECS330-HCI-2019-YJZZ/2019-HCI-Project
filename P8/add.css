@@ -1,0 +1,180 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-position: 520px center;
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+	margin-left: 527px;
+	margin-top: 150px;
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 106px 24px;
+	background-position: center;
+	background-size: 150px;
+	background-color: #FFFACD;
+}
+
+.head-bar {
+	height: 35px;
+	background-color: #FFE4E1;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	
+}
+
+.back-button {
+	width: 20%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.head-title {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 35px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 200px;
+	margin-top: 5px;
+}
+
+.save-button {
+	padding: 0px;
+	margin: 0px;
+	float: right;
+	margin-right: 10px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+
+/* 
+	Body 
+			*/
+
+.date-select {
+	height: 35px;
+}
+
+.date-button {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-left: 60px;
+	width: 80px;
+}
+
+.hour-button {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 70px;
+	
+}
+
+.minute-button {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	margin-top: 30px;
+	width: 80px;
+}
+
+.date-select-result {
+	height: 35px;
+}
+
+.date-select-button {
+	padding: 0px;
+	margin-left: 10px;
+	box-sizing: border-box;
+	width: 138px;
+	height: 35px;
+	background-color: #F5FFFA;
+	border-radius: 6px;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+	border-left: 1px grey solid;
+	border-right: 1px grey solid;
+}
+
+.hour-select-button {
+	padding: 0px;
+	margin-left: 10px;
+	box-sizing: border-box;
+	width: 50px;
+	height: 35px;
+	background-color: #F5FFFA;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+	border-left: 1px grey solid;
+	border-right: 1px grey solid;
+}
+
+.minute-select-button {
+	padding: 0px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	width: 50px;
+	height: 35px;
+	background-color: #F5FFFA;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+	border-left: 1px grey solid;
+	border-right: 1px grey solid;
+}
+
+
+/* 
+	event 
+			*/
+
+.event-input {
+	margin-top: 80px;
+	margin-left: 50px;
+}
+
+.event-name {
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+	border-left: 1px grey solid;
+	border-right: 1px grey solid;
+}
+
+.event-location {
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+	border-left: 1px grey solid;
+	border-right: 1px grey solid;
+}
+
+.event-memo {
+	height: 100px;
+	width: 200px;
+	border-radius: 5px;
+	border-top: 1px grey solid;
+	border-bottom: 1px grey solid;
+	border-left: 1px grey solid;
+	border-right: 1px grey solid;
+}
+
+input[type=month]::-webkit-inner-spin-button { 
+	visibility: hidden; 
+}
