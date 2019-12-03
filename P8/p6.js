@@ -61,16 +61,23 @@ function save(){
     each_info.loca = document.getElementById("event_location").value;
     each_info.name = document.getElementById("event_name").value;
     each_info.memo = document.getElementById("event_memo").value;
-    var cnt = localStorage.getItem("count");
-    if (cnt == null) {
-        cnt = 0;
+
+    if(each_info.name == ""){
+        alert("Event name cannot be empty!");
     }
-    var jsonString = JSON.stringify(each_info);
-    console.log("jsonString", jsonString);
-    localStorage.setItem(cnt, jsonString);
-    cnt = parseInt(cnt);
-    localStorage.setItem("count", cnt + 1);
-    window.location = "./main.html";
+
+    else{
+        var cnt = localStorage.getItem("count");
+        if (cnt == null) {
+            cnt = 0;
+        }
+        var jsonString = JSON.stringify(each_info);
+        console.log("jsonString", jsonString);
+        localStorage.setItem(cnt, jsonString);
+        cnt = parseInt(cnt);
+        localStorage.setItem("count", cnt + 1);
+        window.location = "./main.html";
+    }
 }
 
 function save_edit() {
@@ -147,12 +154,15 @@ function render_plan() {
         window.location.href = "./planning.html";
     }
 
-    if(element.name == "Meeting"){
+    else if(element.name == "Meeting"){
         window.location.href = "./planning2.html";
     }
 
-    if(element.name == "Dating"){
+    else if(element.name == "Dating"){
         window.location.href = "./planning3.html";
+    }
+    else{
+        window.location.href = "./planning4.html";
     }
 }
 
