@@ -132,6 +132,14 @@ body {
 	height: 18px;
 }
 
+.twitter-button{
+	margin-left: 10px;
+	margin-top: 5px;
+    float: left;
+    height: 24px;
+    width: 24px;
+}
+
 /* 
 	Body 
 			*/
