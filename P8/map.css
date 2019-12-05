@@ -11,7 +11,7 @@ body {
 }
 
 #screen {
-    height: 500px;
+    height: 530px;
     width: 300px;
     margin: 106px 24px;
     /*background-image: url("images/alarm-24px.svg");*/
@@ -50,6 +50,11 @@ body {
 
 .twitter {
     margin: 5px;
+}
+
+.twitter-button{
+    float: right;
+    height
 }
 
 
