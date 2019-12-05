@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5ee1e17-0d04-4d4f-ba1d-512e57a227a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/map.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p6.js" beforeDir="false" afterPath="$PROJECT_DIR$/p6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planning.html" beforeDir="false" afterPath="$PROJECT_DIR$/planning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planning2.html" beforeDir="false" afterPath="$PROJECT_DIR$/planning2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planning3.html" beforeDir="false" afterPath="$PROJECT_DIR$/planning3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/map.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planning4.html" beforeDir="false" afterPath="$PROJECT_DIR$/planning4.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -11,7 +11,7 @@ body {
 }
 
 #screen {
-    height: 530px;
+    height: 500px;
     width: 300px;
     margin: 106px 24px;
     /*background-image: url("images/alarm-24px.svg");*/
@@ -46,6 +46,10 @@ body {
 
 .map {
     margin: 25px;
+}
+
+.twitter {
+    margin: 5px;
 }
 
 
