@@ -127,7 +127,6 @@ function render_edit() {
 }
 
 function delete_item(e){
-
     if(window.confirm('Are you sure you want to delete this event?')){         
         console.log("print", e.path[4].id);
         var id = parseInt(e.path[4].id) - 1;
@@ -141,7 +140,6 @@ function delete_item(e){
         cnt--;
         localStorage.setItem("count", cnt);
         window.location.href = "./main.html";
-
     }else{
         return false;
     }
