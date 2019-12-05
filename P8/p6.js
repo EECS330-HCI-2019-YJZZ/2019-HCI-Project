@@ -1,4 +1,4 @@
-// clone the repeated structure many times
+    // clone the repeated structure many times
 function render(node) {
     var cnt = localStorage.getItem("count");
     if (cnt === null) {
@@ -65,7 +65,6 @@ function save(){
     if(each_info.name == ""){
         alert("Event name cannot be empty!");
     }
-
     else{
         var cnt = localStorage.getItem("count");
         if (cnt == null) {
@@ -88,10 +87,16 @@ function save_edit() {
     each_info.loca = document.getElementById("event_location").value;
     each_info.name = document.getElementById("event_name").value;
     each_info.memo = document.getElementById("event_memo").value;
-    var id = localStorage.getItem("edit_page");
-    var jsonString = JSON.stringify(each_info);
-    localStorage.setItem(id, jsonString);
-    window.location.href = "./main.html";
+
+    if(each_info.name == ""){
+        alert("Event name cannot be empty!");
+    }
+    else{
+        var id = localStorage.getItem("edit_page");
+        var jsonString = JSON.stringify(each_info);
+        localStorage.setItem(id, jsonString);
+        window.location.href = "./main.html";
+    }  
 }
 
 function add(){
@@ -122,18 +127,24 @@ function render_edit() {
 }
 
 function delete_item(e){
-    console.log("print", e.path[4].id);
-    var id = parseInt(e.path[4].id) - 1;
-    var cnt = localStorage.getItem("count");
-    console.log("count", localStorage.getItem("count"));
-    for (var i = id + 1; i < cnt; i++) {
-        localStorage.setItem((i-1).toString(), localStorage.getItem(i));
+
+    if(window.confirm('Are you sure you want to delete this event?')){         
+        console.log("print", e.path[4].id);
+        var id = parseInt(e.path[4].id) - 1;
+        var cnt = localStorage.getItem("count");
+        console.log("count", localStorage.getItem("count"));
+        for (var i = id + 1; i < cnt; i++) {
+            localStorage.setItem((i-1).toString(), localStorage.getItem(i));
+        }
+        localStorage.removeItem(cnt);
+        cnt = parseInt(cnt);
+        cnt--;
+        localStorage.setItem("count", cnt);
+        window.location.href = "./main.html";
+
+    }else{
+        return false;
     }
-    localStorage.removeItem(cnt);
-    cnt = parseInt(cnt);
-    cnt--;
-    localStorage.setItem("count", cnt);
-    window.location.href = "./main.html";
 }
 
 
